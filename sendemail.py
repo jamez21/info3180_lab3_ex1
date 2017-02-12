@@ -2,9 +2,9 @@ import smtplib
 
 
 from_name = 'Testrun'
-from_addr = 'gluttonj@gmail.com'
+from_addr = 'youremail@gmail.com'
 to_name = 'Testresult'
-to_addr = '10thfloor@live.com'
+to_addr = 'exampler@live.com'
 subject = 'Test Email'
 msg = 'Hello World'
 message = """From: {} <{}>
@@ -15,8 +15,8 @@ Subject: {}
 
 message_to_send = message.format(from_name, from_addr, to_name, to_addr, subject, msg)
 # Credentials (if needed)
-username = 'gluttonj@gmail.com'
-password = 'ljiqlfkauzrlinqk'
+username = 'youremail@gmail.com'
+password = 'somepassword'
 # The actual mail send
 server = smtplib.SMTP('smtp.gmail.com:587')
 server.starttls()
